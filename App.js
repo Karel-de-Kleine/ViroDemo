@@ -33,7 +33,7 @@ console.disableYellowBox = true;
 // Sets the default scene you want for AR and VR
 var InitialDemo1Scene = require('./js/ARPortals/MainPScene.js');
 var InitialDemo2Scene = require('./js/Snapchat/MainScene.js');
-var InitialDemo3Scene = require('./js/HelloWorldSceneAR.js');
+var InitialDemo3Scene = require('./js/HelloWorldScene.js');
 
 var UNSET = "UNSET";
 var DEMO1_NAVIGATOR_TYPE = "Demo 1";
