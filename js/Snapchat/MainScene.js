@@ -46,11 +46,12 @@ var MainScene = createReactClass({
       />
 
       <Viro3DObject
-        source={require('./Church/ju-87.obj')}
-        resources={[require('./Church/diff.jpg'),
-                    require('./Church/bump.jpg')]}
+        source={require('./Plane/VLJ19OBJ.obj')}
+        resources={[require('./Plane/VLJ19OBJ.mtl'),
+                    require('./Plane/CIRRUSTS19.JPG')]}
         position={[0, 0, 0]}
         scale={[.1, .1, .1]}
+        rotation={[0,90,120]}
         type="OBJ"
         onClick={this._onTappedIcecream}
         animation={{name:"02", run:this.state.runAnimation, loop:true,}}
