@@ -46,20 +46,19 @@ var MainScene = createReactClass({
       />
 
       <Viro3DObject
-        source={require('../res/icecreamman_anim/icecreamman_anim_a.vrx')}
-        resources={[require('../res/icecreamman_anim/icecreamman_diffuse.png'),
-                    require('../res/icecreamman_anim/icecreamman_normal.png'),
-                    require('../res/icecreamman_anim/icecreamman_specular.png')]}
+        source={require('./Church/ju-87.obj')}
+        resources={[require('./Church/diff.jpg'),
+                    require('./Church/bump.jpg')]}
         position={[0, 0, 0]}
-        scale={[.5, .5, .5]}
-        type="VRX"
+        scale={[.1, .1, .1]}
+        type="OBJ"
         onClick={this._onTappedIcecream}
         animation={{name:"02", run:this.state.runAnimation, loop:true,}}
       />
 
       <ViroSurface
         rotation={[-90, 0, 0]}
-        position={[0, -.001, 0]}
+        position={[0, 0, 0]}
         width={2.5} height={2.5}
         arShadowReceiver={true}
       />
